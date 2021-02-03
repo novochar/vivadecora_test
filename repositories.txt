@@ -1,2 +1,4 @@
+novochar/node-typescript-api
+novochar/node-jest-exemple
 vivadecora/desafio-backend-trabalhe-conosco
 vivadecora/ansible-elastic-beanstalk
