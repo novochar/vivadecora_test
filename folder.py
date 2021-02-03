@@ -1,7 +1,6 @@
 
 from bs4 import BeautifulSoup
 import requests
-from multiprocessing import Pool
 
 def bytes_parser(data_units, unit_name):
     if unit_name == 'KB':
@@ -47,7 +46,7 @@ class Folder:
         else:
             return Folder(href, element_link['title'])
   
-    def to_str(self, tabsize=0):
+    def get_tree(self, tabsize=0):
         lines = []
         if self.type == "file":
             lines.append(
@@ -60,10 +59,10 @@ class Folder:
         if self.type == "folder":
             lines.append("|   "*tabsize + "[" + self.name + "]")
             for e in self.elements:
-                lines += e.to_str(tabsize + 1)
+                lines += e.get_tree(tabsize + 1)
         return lines
     
-    def file_type_resume(self):
+    def get_resume(self):
         if self.type == "file":
             return {
                 self.file_type : {
@@ -73,7 +72,7 @@ class Folder:
             }
         if self.type == "folder":
             element_resume = {}
-            children_elements_types = [e.file_type_resume() for e in self.elements]
+            children_elements_types = [e.get_resume() for e in self.elements]
             for child_element_types in children_elements_types:
                 for element_type in child_element_types:
                     lines = child_element_types[element_type]['lines']

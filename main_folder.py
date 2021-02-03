@@ -32,7 +32,10 @@ class MainFolder(Folder):
     def __init__(self, project_name):
         super().__init__(project_name, "Projeto " + project_name)
 
-    def get_file_types(self):
-      return file_types_parser(self.file_type_resume())
+    def get_resume_str(self):
+       return file_types_parser(self.get_resume())
+
+    def get_tree_str(self):
+        return "\n".join(super().get_tree())
 
  

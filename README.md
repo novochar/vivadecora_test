@@ -26,7 +26,7 @@ python3 main.py
 ```
 ou
 ```
-python3 main.py
+python main.py
 ```
 
 <p> Os dados dos repositórios fica em output/<\USUARIO>\/<\NOME REPOSITORIO>.tree.txt (arvore de diretório) e output/<\USUARIO>\/<\NOME REPOSITORIO>.resume.txt (dados resumidos por tipo de arquivo)<p>
