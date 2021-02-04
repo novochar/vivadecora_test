@@ -29,4 +29,16 @@ ou
 python main.py
 ```
 
-<p> Os dados dos repositórios fica em output/<\USUARIO>/<\NOME REPOSITORIO>.tree.txt (arvore de diretório) e output/<\USUARIO>/<\NOME REPOSITORIO>.resume.txt (dados resumidos por tipo de arquivo)<p>
+<p> Os dados dos repositórios fica em output/[USUARIO]/[NOME REPOSITORIO].tree.txt (arvore de diretório) e output/[USUARIO]/[NOME REPOSITORIO].resume.txt (dados resumidos por tipo de arquivo)<p>
+
+<h1>Instalação e execução com Docker Compose</h1>
+
+<p>Caso tenha o Docker e o Docker Compose instalado, e possível executar o projeto digitando:</p>
+```
+sudo docker-compose up
+```
+ou
+```
+docker-compose up
+```
+<p>output funciona da mesma forma que na execução direta em Python</p>
