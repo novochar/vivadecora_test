@@ -29,4 +29,4 @@ ou
 python main.py
 ```
 
-<p> Os dados dos repositórios fica em output/<\USUARIO>/<\NOME REPOSITORIO>.tree.txt (arvore de diretório) e output/<\USUARIO>/<\NOME REPOSITORIO>.resume.txt (dados resumidos por tipo de arquivo)<p>
+<p> Os dados dos repositórios fica em output/<USUARIO>/<NOME REPOSITORIO>.tree.txt (arvore de diretório) e output/<USUARIO>/<NOME REPOSITORIO>.resume.txt (dados resumidos por tipo de arquivo)<p>
