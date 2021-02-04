@@ -36,10 +36,13 @@ python main.py
 <h1>Instalação e execução com Docker Compose</h1>
 
 <p>Caso tenha o Docker e o Docker Compose instalado, e possível executar o projeto digitando:</p>
+
 ```
 sudo docker-compose up
 ```
+
 ou
+
 ```
 docker-compose up
 ```
